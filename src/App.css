@@ -1,0 +1,324 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: 'Inter', sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 16px 52px;
+}
+
+#menu ul {
+  display: flex;
+  gap: 40px;
+}
+
+#menu li {
+  display: flex;
+  list-style: none;
+}
+
+#menu li a {
+  display: flex;
+  text-decoration: none;
+  color: #282828;
+}
+
+#menu li a img {
+height: 17px;
+margin-top: 1px;
+padding-left: 5px;
+}
+
+#icons-top {
+  display: flex;
+  gap: 25px;
+}
+
+#icons-top button {
+  border: none;
+  background-color: #FFFFFF;
+}
+
+#icons-top a {
+  display: flex;
+  transition: 0.3s;
+}
+
+#icons-top a:hover {
+  display: flex;
+  transform: scale(1.3);
+}
+
+
+
+
+#content {
+  display: flex;
+}
+
+#content-left {
+  display: flex;
+  width: 50vw;
+}
+
+#content-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 80px;
+}
+
+#content-right span {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+#content-right h1 {
+  font-size: 54px;
+  font-weight: 600px;
+  margin-bottom: 10px;
+}
+
+#content-right p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+#content-right a {
+  color: #282828;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid #282828;
+  max-width: 130px;
+}
+
+
+
+
+
+#section1 {
+  display: flex;
+  padding: 45px;
+  justify-content: center;
+}
+
+#logos-section1 {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+  width: 1336px;
+  border-top: 1px solid #D0D5DD;
+  border-bottom: 1px solid #D0D5DD;
+  padding: 20px;
+}
+
+
+
+
+@media only screen and (min-width: 900px) and (max-width: 1200px) {
+  #content-left img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+
+
+@media only screen and (max-width: 900px) {
+  #content-left img {
+    width: 400px;
+    height: 400px;
+  }
+
+  #content-right span {
+    font-size: 12px;
+  }
+  
+  #content-right h1 {
+    font-size: 45px;
+  }
+  
+  #content-right p {
+    font-size: 14px;
+  }
+  
+  #content-right a {
+    font-size: 12px;
+    max-width: 87px;
+  }
+
+
+  #section1 {
+    width: 200px;
+    padding: 20px;
+    padding-left: 400px;
+  }
+
+  #section1 img {
+    width: 65px;
+    height: 50px;
+  }
+
+  #logos-section1 {
+    padding: 10px;
+  }
+}
+
+
+
+@media only screen and (max-width: 750px) {
+  #menu {
+    display: none;
+  }
+
+  #content-left img {
+    width: 350px;
+    height: 350px;
+  }
+
+  #section1 img {
+    width: 45px;
+    height: 35px;
+  }
+
+  #content-right {
+    margin-right: 40px;
+  }
+
+  #content-right span {
+    font-size: 12px;
+  }
+  
+  #content-right h1 {
+    font-size: 40px;
+  }
+  
+  #content-right p {
+    font-size: 12px;
+  }
+  
+  #content-right a {
+    font-size: 11px;
+    max-width: 80px;
+  }
+
+  #section1 {
+    padding-left: 370px;
+  }
+
+}
+
+@media only screen and (max-width: 645px) {
+  #content {
+    flex-direction:column-reverse;
+  }
+
+  #content-left {
+    margin-top: 20px;
+    margin-left: 160px;
+  } 
+
+  #content-right {
+    margin-top: 10px;
+    margin-left: 120px;
+  }
+
+  #section1 {
+    padding-left: 320px;
+  }
+
+  #section1 img {
+    width: 40px;
+    height: 30px;
+  }
+}
+
+
+
+@media only screen and (max-width: 570px) {
+  #logo-site img {
+    width: 80%;
+  }
+  #icons-top {
+    margin-bottom: 5px;
+    gap: 20px;
+  }
+  
+  #icons-top img {
+    height: 100%;
+    width: 80%;
+  }
+
+  #content {
+    flex-direction:column-reverse;
+  }
+
+  #content-left {
+    margin-top: 25px;
+    justify-content: center;
+  } 
+
+  #content-right {
+    margin-top: 10px;
+    margin-right: 50px;
+    padding-right: 70px;
+  }
+
+  #section1 {
+    padding-left: 285px;
+  }
+
+  #section1 img {
+    width: 25px;
+    height: 20px;
+  }
+}
+
+
+
+@media only screen and (max-width: 490px) {
+  #logo-site img {
+    width: 75%;
+  }
+  #icons-top {
+    margin-bottom: 5px;
+    gap: 20px;
+  }
+  
+  #icons-top img {
+    height: 100%;
+    width: 75%;
+  }
+
+  #content {
+    flex-direction: column-reverse;
+  }
+
+  #content-left {
+    margin-top: 25px;
+    padding-right: 100px;
+  } 
+
+  #content-right {
+    margin-top: 10px;
+    padding-left: 0px;
+
+  }
+
+  #section1 {
+    padding-left: 220px;
+  }
+
+  #section1 img {
+    width: 20px;
+    height: 15px;
+  }
+}
